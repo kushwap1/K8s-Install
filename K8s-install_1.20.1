@@ -64,9 +64,9 @@ Verify the cluster is working.
 
 kubectl version
 
-Install the Calico network add-on.
-
-kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+##Install the Calico network add-on.
+#kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
+kubectl apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/calico.yaml
 
 Check the calico-related kube-system Pods to verify that everything is working so far (they may take a few moments to fully start up).
 
