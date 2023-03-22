@@ -96,6 +96,10 @@ sudo usermod -aG docker $USER
 
 sudo sed -i 's/disabled_plugins/#disabled_plugins/' /etc/containerd/config.toml
 
+# change SystemdCgroup = true in /etc/containerd/config.toml
+sudo vim /etc/containerd/config.toml
+change SystemdCgroup = true
+
 # Restart containerd
 
 sudo systemctl restart containerd
